@@ -1,15 +1,11 @@
-## Welcome to Devingel's Blog
-
-You can use the [editor on GitHub](https://github.com/DA0717/DA0717.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Welcome to Devingel's Blog
 
 ## 个人简历
 
 ### 联系方式
 
-+ Email: limuyu01@gmail.com/limuyu_01@163.com
-+ QQ: 1486074738
++ Email: limuyu01@gmail.com; limuyu_01@163.com
++ WeChat: Veen0717
 
 ### 个人信息
 
@@ -36,7 +32,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ##### 2017.11-2018.4 热障涂层
 
-于天津大学材料学院重点试验室研究热障，发表 SCI 论文一篇 [Hot corrosion behavior of BaLa_2Ti_3O_10 exposed to calcium-magnesium- alumina-silicate at elevated temperatures](https://www.sciencedirect.com/science/article/pii/S027288421830573X?via%3Dihub)
+于天津大学材料学院重点试验室研究热障，发表 SCI 论文一篇 [Hot corrosion behavior of BaLa<sub>2</sub>Ti<sub>3</sub>O<sub>10</sub> exposed to calcium-magnesium- alumina-silicate at elevated temperatures](https://www.sciencedirect.com/science/article/pii/S027288421830573X?via%3Dihub)
 
 ##### 2019.5-2020.5 可展结构
 
@@ -47,12 +43,13 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 + 天津动物园志愿者服务
 + 天津大学求是学部试验田实践
 
+### 三、获奖经历
 
++ 2018/05  天津大学2018年消防知识竞赛优秀奖
++ 2018/12  天津大学2018心理健康教育先进个人
++ **2019/08  第十二届全国周培源大学生力学竞赛一等奖**
++ **2019/10  国家励志奖学金**
++ 2019/10  第四届天津市力学竞赛特等奖（第1名）
++ **2020/01  国际工程力学竞赛（亚洲赛区）个人赛特等奖**
++ 2020/01  国际工程力学竞赛（亚洲赛区）团体赛一等奖
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/DA0717/DA0717.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
