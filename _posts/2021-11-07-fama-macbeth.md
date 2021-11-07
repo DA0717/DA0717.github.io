@@ -3,9 +3,9 @@ layout: post
 title: "Fama-Macbeth Regression"
 category: Quant
 tags:
-  - quant
-  - regression
-  - capm
+  - Quant
+  - Regression
+  - CAPM
 ---
 
 
