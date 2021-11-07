@@ -21,5 +21,3 @@ Email:
 + Academics: <u>academic@limuyu.cn</u>
 
 I will share some notes here, mostly about my major, interests and life. Actually, I just use it to save notes for different facilities.
-
-> To make pages show up in the sidebar, add `sidebar_link: true` to the front matter.

@@ -3,4 +3,4 @@ layout: category
 title: Mechanics
 ---
 
-This page is about MECHANICS.
+These posts are about MECHANICS.
