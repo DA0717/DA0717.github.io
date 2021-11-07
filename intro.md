@@ -1,3 +1,2 @@
-About this page
+Contact
 
-Quant me
