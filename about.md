@@ -10,7 +10,7 @@ Welcome there.
 
 This is SHENKOT. 
 
-Renming University, CHINA.
+Renming University of China.
 
 Interests: Quant, Mechanics.
 
