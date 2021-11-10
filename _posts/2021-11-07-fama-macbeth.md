@@ -10,7 +10,7 @@ tags:
 
 
 
-### 从 CAPM 到 Fama-Macbeth Regression
+> 从 CAPM 到 Fama-Macbeth Regression. 从产生动机到回归本身，再到扩展。
 
 ##### 1. 关于CAPM 的一些补充
 

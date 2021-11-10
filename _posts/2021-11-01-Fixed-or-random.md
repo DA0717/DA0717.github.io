@@ -10,21 +10,21 @@ tags:
 
 
 
-### About Fixed Effect Model and Random Effect Model
+> About "Fixed Effect Model" and "Random Effect Model" in panel data.
 
-> Reference: [面板数据回归分析，上财经济学院](https://max.book118.com/html/2018/0705/5034012214001301.shtm)
+Reference: [面板数据回归分析，上财经济学院](https://max.book118.com/html/2018/0705/5034012214001301.shtm)
 
 
 
 $$
 \begin{aligned}
-& y_ {it} = \alpha _ i + \bold X_{it} \boldsymbol \beta + u_{it} \\
+& y_ {it} = \alpha _ i + \boldsymbol X_{it} \boldsymbol \beta + u_{it} \\
 & i = 1, 2, \cdots, N. \text{and } t = 1, 2, \cdots, T
 \end{aligned}
 $$
 
 
-$\bold X_{it}$ ——1 by k; 	$\boldsymbol \beta$——k by 1, 其中 k 为解释变量的个数。
+$\boldsymbol X_{it}$ ——1 by k; 	$\boldsymbol \beta$——k by 1, 其中 k 为解释变量的个数。
 
 其余的假设：$u_{it}$ 为随机扰动项，
 
