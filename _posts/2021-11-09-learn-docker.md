@@ -5,14 +5,14 @@ category: Code
 tags:
   - Docker
   - Linux
-last_modified_at: 2021-11-09T10:47:48-05:00
+last_modified_at: 2021-11-11T10:01:48-05:00
 ---
 
 
 
 >记录学习 `Docker` 的过程，包括遇到的问题及其解决方案。
 
-参考：[Docker 教程](https://www.runoob.com/docker/docker-tutorial.html)，因此本文主要写一些学习过程中遇到的问题及其结局方案。
+参考：[Docker 教程](https://www.runoob.com/docker/docker-tutorial.html)，因此本文主要写一些学习过程中遇到的问题及其解决方案。
 
 #### 1. Introduction
 
@@ -24,9 +24,10 @@ last_modified_at: 2021-11-09T10:47:48-05:00
 
 #### 3. Example
 
-##### 3.1 example 1: basic
+##### 3.1 example 1: `docker run`
 
 ```bash
+# '-d' means that it will be dettached in the background
 localhost:~ shenkot$ docker run -d ubuntu:15.10 /bin/sh -c "while true; do echo hello world; sleep 1; done"
 0d1942140b2bb671f950abcb4eef15de419ea20edd79bfb56b73e17e3dea0de1
 # list all containers
@@ -40,10 +41,18 @@ hello world
 # stop the container
 localhost:~ shenkot$ docker stop 0d1942140b2b
 0d1942140b2b
-# start the container
+# start the container, or 'restart'
 localhost:~ shenkot$ docker start 0d1942140b2b
 0d1942140b2b
+# attch the container
+localhost:~ shenkot$ docker attach 0d1942140b2b
+hello world
+# use 'ctrl+D' to exit the container?
 ```
+
+##### 3.2 example 2-`run ubuntu bash`
+
+
 
 
 
