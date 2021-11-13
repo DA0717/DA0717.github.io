@@ -18,7 +18,7 @@ tags:
 
 #### 1.1 questions
 
-##### 1. Why use `d[["rate"]]`?
+###### 1. Why use `d[["rate"]]`?
 
 In fact, use `d["rate"]`also  working well.
 
@@ -30,29 +30,29 @@ unrate <- ts(d[["rate"]], start=c(1948,1), frequency=12)
 plot(unrate)
 ```
 
-##### 2. pipe function `%>%` 
+###### 2. pipe function `%>%` 
 
 `x %>% f` means `f(x)`, why I use it? To <u>save memory</u>.
 
-##### 3. `getSymbols` useless
+###### 3. `getSymbols` useless
 
 Found [solution 1](https://www.codenong.com/44015838/). But when I use it, it will open my browser to download the data, which means thta one more step, reading the data from file is needed.  And VPN should be open. It works anyway.
 
 > Copied from [https://www.codenong.com/44015838/](https://www.codenong.com/44015838/)
 
-##### 4. `coredata(x)`
+###### 4. `coredata(x)`
 
 > Generic functions for extracting the core data contained in a (more complex) object and replacing it.
 
 大概是将一些复杂的对象建立的数据（如 `xts` ）转化为 `R` 的普通数据类型。
 
-##### 5. `package::function`
+###### 5. `package::function`
 
 不用 `library(function)`，避免不同包的重名函数和`library`的其他附带作用。
 
 ### 2. Financial data
 
-##### 2.1 return
+#### 2.1 return
 
 Correlation between <u>log return</u>($r_t$) and <u>simple return</u>($R_t$).
 $$
@@ -85,7 +85,7 @@ Output:
 
 ![](https://i.bmp.ovh/imgs/2021/11/379954313755cb36.png)
 
-##### 2.2 statistics distribution
+#### 2.2 statistics distribution
 
 Just look at [here](https://www.math.pku.edu.cn/teachers/lidf/course/fts/ftsnotes/html/_ftsnotes/fts-intro.html#intro-returnstat). Some keys below.
 
@@ -122,6 +122,8 @@ continuation...
 #### 18.1 Garch model
 
 对数收益率序列 $r_t$，新息序列$a_t = r_t - \mu_t = r_t - E(r_t|F_{t-1})$，称 $a_t$ 服从 $GARCH(m,s)$模型若满足：
+
+
 $$
 \left\{
 \begin{aligned}
@@ -133,6 +135,8 @@ $$
 \end{aligned}
 \right.
 $$
+
+
 最后一个条件用来满足 $E(a_t)$ 有限且不变。但是 $E(\sigma_t^2|F_{t-1})$ 可以变化。
 
 
