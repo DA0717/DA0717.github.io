@@ -121,7 +121,7 @@ continuation...
 
 #### 18.1 Garch model
 
-对数收益率序列 $r_t$，新息序列$a_t = r_t - \mu_t = r_t - E(r_t|F_{t-1})$，称 $a_t$ 服从 $GARCH(m,s)$模型若满足：
+对数收益率序列 $r_t$，新息序列$a_t = r_t - \mu_t = r_t - E(r_t\|F_{t-1})$，称 $a_t$ 服从 $GARCH(m,s)$模型若满足：
 
 
 $$
@@ -137,7 +137,8 @@ $$
 $$
 
 
-最后一个条件用来满足 $E(a_t)$ 有限且不变。但是 $E(\sigma_t^2|F_{t-1})$ 可以变化。
+
+最后一个条件用来满足 $E(a_t)$ 有限且不变。但是 $E(\sigma_t^2 \boldsymbol | F_{t-1})$ 可以变化。
 
 
 
