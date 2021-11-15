@@ -55,9 +55,15 @@ Found [solution 1](https://www.codenong.com/44015838/). But when I use it, it wi
 #### 2.1 return
 
 Correlation between <u>log return</u>($r_t$) and <u>simple return</u>($R_t$).
+
+
+
 $$
 r_t = \ln \frac{P_t}{P_{t-1}} = \ln(\frac{P_t - P_{t-1}}{P_t} + 1) = \ln (R_t + 1)
 $$
+
+
+
 An example:
 
 ```R
@@ -119,7 +125,7 @@ continuation...
 
 ### 18. Garch Model
 
-#### 18.1 Garch model
+#### 18.1 GARCH
 
 对数收益率序列 $r_t$，新息序列$a_t = r_t - \mu_t = r_t - E(r_t \vert F_{t-1})$，称 $a_t$ 服从 $GARCH(m,s)$模型若满足：
 
@@ -139,6 +145,30 @@ $$
 
 
 最后一个条件用来满足 $E(a_t)$ 有限且不变。但是 $E(\sigma_t^2 \vert F_{t-1})$ 可以变化。
+
+#### 18.2 IGARCH
+
+IGARCH(1,1):
+
+
+$$
+a_t = \sigma_t \epsilon_t,\ \ \sigma_t^2 = \alpha_0 + (1-\beta_1) a_{t-1}^2 + \beta_1 \sigma_{t-1}^2
+$$
+
+
+#### 18.3 EGARCH
+
+允许正负资产收益率对波动率有不对称的影响。
+
+
+$$
+a_t = \sigma_t \epsilon_t,\ \ \ln{\sigma_t^2} = \alpha_0 + 
+[\alpha_1 \epsilon_{t-1}+ \gamma_1(\vert \epsilon_{t-1} \vert 
+- E\vert \epsilon_{t-1} \vert)] + \beta_1 \ln(\sigma^2_{t-1})
+$$
+
+
+没有
 
 
 
