@@ -18,6 +18,14 @@ last_modified_at: 2021-11-11T10:01:48-05:00
 
 如果看不懂上述教程对 `docker` 的专业性介绍，以这篇[入门](https://zhuanlan.zhihu.com/p/187505981)更好——对于 `image` 和 `container` 的解释十分通俗，对初学者十分友好。
 
+```bash
+localhost:~ limuyu$ docker images
+REPOSITORY               TAG       IMAGE ID       CREATED        SIZE
+mysql                    latest    b05128b000dd   4 days ago     516MB
+```
+
+其中的 created 是`image`的创建日期，并不是`pull`的日期。
+
 #### 2. Installation
 
 [官网](https://docs.docker.com/desktop/mac/install/)下载速度很慢，包括 `homebrew` 下载也很慢，采用[阿里云源](https://mirrors.aliyun.com/docker-toolbox/)。注意查看所支持的系统版本，比如我就下载到 MacOS 11.0 以上的版本了。
