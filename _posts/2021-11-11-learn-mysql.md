@@ -89,10 +89,11 @@ mysql>
 进入后的界面：
 
 ```sql
-mysql> use mysql #因为可能包含多个数据库，这一步是为了指定要操作的数据库
+#因为可能包含多个数据库，这一步是为了指定要操作的数据库
+mysql> use mysql 
 Database changed
 
-# 查看一共有哪些数据库
+#查看一共有哪些数据库
 mysql> SHOW DATABASES;
 +--------------------+
 | Database           |
@@ -115,7 +116,7 @@ mysql> SHOW TABLES;
 +------------------------------------------------------+
 37 rows in set (0.00 sec)
 
-# 查看数据表属性（即表头）、属性类型、主键信息、是否为 NULL，默认值等其他信息。
+#查看数据表属性（即表头）、属性类型、主键信息、是否为 NULL，默认值等其他信息。
 mysql> SHOW COLUMNS FROM user
     -> ;
 +--------------------------+-----------------------------------+------+-----+-----------------------+-------+
@@ -130,10 +131,10 @@ mysql> SHOW COLUMNS FROM user
 +--------------------------+-----------------------------------+------+-----+-----------------------+-------+
 51 rows in set (0.01 sec)
 
-# 显示数据表的详细索引信息，包括PRIMARY KEY（主键）。
+#显示数据表的详细索引信息，包括PRIMARY KEY（主键）。
 mysql> SHOW INDEX FROM user;
 
-# 显示数据表状态，从数据库database中
+#显示数据表状态，从数据库database中
 mysql> show table status from mysql;
 ```
 
@@ -142,10 +143,10 @@ mysql> show table status from mysql;
 由于mysql更新，用户设置已经不能用菜鸟教程的[在user表中添加一行](https://www.runoob.com/mysql/mysql-administration.html)来实现了，改为如下实现。
 
 ```sql
-# 创建新用户，用户名@访问IP indentified by 密码
+#创建新用户，用户名@访问IP indentified by 密码
 mysql> create user 'guest'@'%' identified by 'guest123';
 
-# 赋予新用户所有数据库中所有表的增删查改和建表删表的权限
+#赋予新用户所有数据库中所有表的增删查改和建表删表的权限
 mysql> grant usage on *.* to 'guest'@'%' with grant option;
 mysql> grant select,insert,update,delete,create,drop on *.* to 'guest'@'%' with grant option;
 
